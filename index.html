@@ -10,6 +10,7 @@
     >
     <title>CloudReady AZ-900 | Learn Azure with Confidence</title>
     <link rel="stylesheet" href="style.css">
+    <script src="data/questions.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -125,6 +126,52 @@
                 AZ-900 study guide.
             </p>
         </section>
+
+<section class="quiz-section" id="quiz-section" hidden>
+    <div class="quiz-header">
+        <div>
+            <p class="eyebrow">PRACTISE YOUR KNOWLEDGE</p>
+            <h2>AZ-900 Practice Quiz</h2>
+        </div>
+        <button class="text-button" id="exit-quiz-btn" type="button">
+            Back to home
+        </button>
+    </div>
+
+    <div class="quiz-progress">
+        <div class="quiz-progress-label">
+            <span id="question-counter">Question 1 of 6</span>
+            <span id="score-label">Score: 0</span>
+        </div>
+        <div
+            class="progress-track"
+            role="progressbar"
+            aria-label="Quiz progress"
+            aria-valuemin="0"
+            aria-valuemax="6"
+            aria-valuenow="0"
+            id="progress-track"
+        >
+            <div class="progress-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <p class="quiz-domain" id="quiz-domain"></p>
+    <h3 class="quiz-question" id="quiz-question"></h3>
+
+    <div class="answer-options" id="answer-options"></div>
+
+    <div class="answer-feedback" id="answer-feedback" aria-live="polite" hidden>
+        <h4 id="feedback-heading"></h4>
+        <p id="feedback-explanation"></p>
+    </div>
+
+    <div class="quiz-actions">
+        <button class="primary-button" id="next-question-btn" type="button" disabled>
+            Next question →
+        </button>
+    </div>
+</section>
 
         <p class="interaction-message" id="status-message" aria-live="polite"></p>
     </main>
