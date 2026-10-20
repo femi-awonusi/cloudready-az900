@@ -578,3 +578,129 @@ main {
     }
 }
 
+
+/* Progress dashboard */
+
+.dashboard-section {
+    margin: 36px 0;
+    padding: 30px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.section-heading {
+    margin-bottom: 24px;
+}
+
+.section-heading h2 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 1.8rem;
+}
+
+.section-heading > p:last-child {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.dashboard-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    padding: 20px;
+    background: #f5f8fd;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.stat-card p {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: var(--navy);
+    font-size: 2rem;
+}
+
+.domain-performance > h3 {
+    margin: 0 0 18px;
+    color: var(--navy);
+    font-size: 1.2rem;
+}
+
+#domain-stats {
+    display: grid;
+    gap: 14px;
+}
+
+.domain-stat-card {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.domain-stat-card h4 {
+    margin: 0 0 8px;
+    color: var(--navy);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.domain-stat-card p {
+    margin: 0 0 12px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.domain-progress-track {
+    height: 8px;
+    overflow: hidden;
+    background: #e8edf5;
+    border-radius: 99px;
+}
+
+.domain-progress-fill {
+    height: 100%;
+    background: var(--blue);
+    border-radius: inherit;
+    transition: width 0.25s ease;
+}
+
+.dashboard-note {
+    margin: 24px 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 650px) {
+    .dashboard-section {
+        padding: 20px;
+    }
+
+    .dashboard-summary {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .section-heading h2 {
+        font-size: 1.5rem;
+    }
+}
