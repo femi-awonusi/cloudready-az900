@@ -42,7 +42,8 @@ a {
 }
 
 button:focus-visible,
-a:focus-visible {
+a:focus-visible,
+.answer-option:focus-visible {
     outline: 3px solid #93c5fd;
     outline-offset: 4px;
 }
@@ -322,15 +323,18 @@ main {
 }
 
 /* 8. Responsive layout for tablets and phones */
+
 @media (max-width: 800px) {
     .hero {
         grid-template-columns: 1fr;
-        gap: 35px;
-        padding: 55px 0;
+        gap: 28px;
+        padding: 45px 0;
     }
 
     .hero-panel {
         max-width: 560px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .domain-grid {
@@ -340,10 +344,23 @@ main {
     .section-heading {
         align-items: flex-start;
         flex-direction: column;
+        gap: 12px;
     }
 
     .section-description {
         max-width: none;
+    }
+
+    .quiz-section,
+    .dashboard-section,
+    .domain-section {
+        min-width: 0;
+    }
+
+    .answer-option {
+        width: 100%;
+        min-height: 48px;
+        text-align: left;
     }
 }
 
@@ -360,22 +377,40 @@ main {
     }
 
     .hero {
-        padding: 42px 0;
+        padding: 35px 0;
     }
 
     .hero h1 {
-        font-size: 2.55rem;
+        font-size: clamp(2rem, 9vw, 2.55rem);
         letter-spacing: -1px;
+        overflow-wrap: anywhere;
     }
 
     .hero-panel,
     .domain-card {
-        padding: 21px;
+        padding: 18px;
+    }
+
+    .quiz-question {
+        font-size: 1.15rem;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .answer-option {
+        gap: 10px;
+        padding: 13px;
+        line-height: 1.45;
+    }
+
+    .option-letter {
+        flex-shrink: 0;
     }
 
     .site-footer {
         flex-direction: column;
         padding: 22px 5%;
+        gap: 10px;
     }
 }
 
