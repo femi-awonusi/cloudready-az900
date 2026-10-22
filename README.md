@@ -70,8 +70,9 @@ This project demonstrates practical frontend development skills, including JavaS
 
 ## Hackathon Documentation
 
-- [Prompt-Engineering Evidence](docs/prompt-engineering-evidence.md) — Documents the AI-assisted development approach, prompting examples, testing, and verification.
-- [Hackathon Pitch Notes](docs/hackathon-pitch-notes.md) — Includes the pitch slide content and speaker notes.
+Prompt-Engineering Evidence (docs/prompt-engineering-evidence.md) — Documents the AI-assisted development approach, prompting examples, testing, and verification.
+
+Hackathon Pitch Notes(docs/hackathon-pitch-notes.md) — Includes the pitch slide content and speaker notes.
 
 ## Disclaimer
 
