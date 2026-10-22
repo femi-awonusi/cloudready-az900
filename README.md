@@ -6,6 +6,20 @@ CloudReady AZ-900 is a browser-based practice quiz application designed to help 
 
 [Launch CloudReady AZ-900](https://femi-awonusi.github.io/cloudready-az900/)
 
+## Screenshots
+
+### Quiz Home
+
+![CloudReady AZ-900 quiz home screen](screenshots/quiz-home.png)
+
+### Active Question
+
+![CloudReady AZ-900 active quiz question](screenshots/active-question.png)
+
+### Quiz Results
+
+![CloudReady AZ-900 quiz results screen](screenshots/quiz-results.png)
+
 ## Features
 
 - Interactive AZ-900 practice quizzes.
@@ -37,14 +51,18 @@ For a more consistent local development experience, use the Live Server extensio
 
 ```text
 cloudready-az900/
+├── data/
+├── screenshots/
+│   ├── quiz-home.png
+│   ├── active-question.png
+│   └── quiz-results.png
 ├── index.html
 ├── style.css
 ├── app.js
-├── data/
 └── README.md
 ```
 
-The `data/` directory contains the quiz question data used by the application.
+The `data/` directory contains the quiz question data used by the application. The `screenshots/` directory contains images of the application interface.
 
 ## Purpose
 
