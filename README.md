@@ -68,6 +68,11 @@ The `data/` directory contains the quiz question data used by the application. T
 
 This project demonstrates practical frontend development skills, including JavaScript-based application logic, interactive user interfaces, data organisation, score calculation and deployment through GitHub Pages.
 
+## Hackathon Documentation
+
+- [Prompt-Engineering Evidence](docs/prompt-engineering-evidence.md) — Documents the AI-assisted development approach, prompting examples, testing, and verification.
+- [Hackathon Pitch Notes](docs/hackathon-pitch-notes.md) — Includes the pitch slide content and speaker notes.
+
 ## Disclaimer
 
 CloudReady AZ-900 is an independent learning project and is not affiliated with, endorsed by, or sponsored by Microsoft. It is intended as a supplementary study resource and does not guarantee certification success.
