@@ -269,6 +269,7 @@ function renderMissedQuestions() {
 // -----------------------------------------------------------------------------
 
 function startQuiz() {
+    document.getElementById("learner-feedback").hidden = true;
     if (!Array.isArray(questions) || questions.length === 0) {
         statusMessage.textContent =
             "The question bank could not be loaded. Please refresh the page.";
@@ -501,6 +502,9 @@ function showResults() {
 
     nextQuestionButton.disabled = false;
     nextQuestionButton.textContent = "Try again ↻";
+
+    // Show the learner feedback form after the quiz ends.
+    document.getElementById("learner-feedback").hidden = false;
 }
 
 // -----------------------------------------------------------------------------
